@@ -2,7 +2,7 @@
 
 Write the scientific computing environment in the department
 
-(Who would like to pick up this job?)
+**Wait for Yishu to write this article**
 
 * Econsuper
 * student remote computer
