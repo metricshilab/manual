@@ -9,7 +9,7 @@ Zhentao Shi and Zhan Gao
 Git is a version control system useful when developing and maintaining
 coding projects as well as preparing long documents.
 
-Git helps me manage course materials. Free Git books and tutorials are available online.
+Free Git books and tutorials are available online.
 Self-learning is important.
 
 * [Atlassian Online Tutorial](https://www.atlassian.com/git/tutorials)
@@ -20,7 +20,7 @@ Self-learning is important.
 
 We introduce some essential Git commands.
 There are two ways to interact with Git. Git provides a command line tool Git Bash,
-and there are many free Git GUIs available (I recommend [SourceTree](https://www.sourcetreeapp.com/)).
+and there are many free Git GUIs available (We recommend [SourceTree](https://www.sourcetreeapp.com/)).
 Even if we use a GUI, knowing the basic commands is helpful.
 
 
@@ -46,16 +46,16 @@ Even if we use a GUI, knowing the basic commands is helpful.
 #### Eraser-like features
 
 The latest commit is called **HEAD** commit
-* `git show HEAD`  to view the HEAD commit.
-* `git checkout HEAD filename` to restore the file in the working directory to what you made in last commit.
-* `git reset HEAD filename` this command unstages the file from committing in the staging area. This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area.
-* `git reset SHA` This command works by using **the first 7 characters** of the SHA of a previous commit.
+* `git show HEAD`  displays view the HEAD commit.
+* `git checkout HEAD filename` restores the file in the working directory to what you made in last commit.
+* `git reset HEAD filename` unstages the file from committing in the staging area. This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory; it just removes them from the staging area.
+* `git reset SHA` works by using **the first 7 characters** of the SHA of a previous commit.
 
 #### Branch
 * `git branch` displays the current branch.
 * `git branch brach_name` creates a new branch. The branch name cannot contain white-space
-* `git checkout branch_name` switch to a branch
-* `git merge branch_name` merging the branch into master
+* `git checkout branch_name` switches to a branch
+* `git merge branch_name` merges the branch into master
 **merge conflict**: Git doesn't know which changes you want to keep. Modify the file in the working directory and commit it again to avoid conflict.
 * `git branch -d branch_name` deletes a branch from the project.
 
