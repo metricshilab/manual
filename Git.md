@@ -1,5 +1,5 @@
 
-# Git
+# Git and Github
 
 
 Zhentao Shi and Zhan Gao
@@ -24,7 +24,7 @@ and there are many free Git GUIs available (We recommend [SourceTree](https://ww
 Even if we use a GUI, knowing the basic commands is helpful.
 
 
-## Basic Commands
+## Basic Git Commands
 
 ### Local
 
@@ -66,27 +66,27 @@ In Git, branches are usually a means to an end. We create them to work on a new 
 * `git clone https://github.com/zhentaoshi/econ5170`
 * `git remote add origin` adds the origin remote's URL.
 * `git remote -v` lists git project's remote copies.
-* `git push origin master` upload local commits to the remote repository.
-* `git pull` download the remote copy and merge.
+* `git push origin master` uploads local commits to the remote repository.
+* `git pull` downloads the remote copy and merge.
 * `git fetch` fetches the remote copy to the local hard disk. **Note:** This command will not merge changes from the remote into your local repository. It inspects the changes on the remote branch.
 * `git remote set-url origin https://github.com/zhentaoshi/econ5170` changes the remote's URL.
 
 Collaboration typically works as follows:
-1. Fetch and merge changes from the remote;
+1. Fetch and merge changes from a remote repository;
 2. Create a branch to work on a new project feature;
 3. Develop the feature on your branch and commit your work;
-4. Fetch and merge from the remote again (in case new commits have been uploaded while you were working);
+4. Fetch and merge from the remote again (in case other collaborators have uploaded new commits while you were working);
 5. Push your branch up to the remote for review.
 
 #### Conflict
 
-Collaborators working on the same file separately might cause conflicts. In such situations, the command `git pull` will not merge chanegs from the remote into your local repository automatically due to the conflict. You are expected to see a similar message on the shell:
+Collaborators working separately on the same paragraph of a file may easily encounter conflicts. In such situations, the command `git pull` will not merge changes from the remote into your local repository automatically due to the conflict. You are expected to something like this in the shell:
 ```
 git pull
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From https://bitbucket.org/your-user-name/repo-name
+From https://github.com/your-user-name/repo-name
    9b02654..0462f26  master     -> origin/master
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
@@ -124,11 +124,21 @@ Remote changes.
 >>>>>>> 0462f26ddfe83c35424168c2d7a0bed62c653413
 ```
 
-You can see conflicts indicated by Git. The content between `<<<<<<< HEAD` and `=======` is on HEAD and content between `=======` and `>>>>>>>` is from the commit `0462f26ddfe83c35424168c2d7a0bed62c653413`. To resolve the conflicts, you just remove `<<<<<<< HEAD`, `=======` and `>>>>>> 0462f26ddfe83c35424168c2d7a0bed62c653413`, and keep what you want keep in the file.
+You can see conflicts indicated by Git. The content between `<<<<<<< HEAD` and `=======` is on HEAD and content between `=======` and `>>>>>>>` is from the commit `0462f26`. To resolve the conflicts, you just remove `<<<<<<< HEAD`, `=======` and `>>>>>> 0462f26`, and keep what you want to keep in the file.
 
-In some cases, the difference between the local branch and the remote branch is significant, or the file with conflicts is of a special format, say Lyx file. It might be cumbersome to resolve all conflicts in the text editor. Another way to resovle conflicts is simply to open two versions of the files and copy and paste new updates and then commit the updated file. It easy to do so in *SourceTree*: select the commit -> right click the file -> click `Open Selected Version`.
+In some cases, the difference between the local branch and the remote branch is significant, or the file with conflicts is of a special format, say Lyx file. It might be cumbersome to resolve all conflicts in the text editor. Another way to resovle conflicts is simply to open two versions of the files and copy and paste new updates and then commit the updated file. It is easy to do so in *SourceTree*: select the commit -> right click the file -> click `Open Selected Version`.
 
 In addition, we can resolve conflicts with *SourceTree* (**preferred**) or external merge tools, for example [*KDiff3*](http://kdiff3.sourceforge.net/). For details, it is recommended to refer to [the answer on Stack Overflow](https://stackoverflow.com/questions/16800280/how-to-interactively-visually-resolve-conflicts-in-sourcetree-git).
+
+## Github
+
+Github is the most popular provider of Git repository internet hosting. Github's free account offers unlimited public repositories, and university students and teachers can register for unlimited complimentary private repositories as well. Among other internet hosts such as bitbucket and Gitlab, both of which offer unlimited private repositories for free, Github boasts the largest community of code developers.
+
+We collaborate with students and researchers on Github extensively. This is ZT's personal Github profile [https://github.com/zhentaoshi](https://github.com/zhentaoshi).
+
+
+
+
 
 
 **Acknowledgment**: Part of this notes is based on the course offered by CodeAcademy.
