@@ -1,0 +1,47 @@
+% this is a template for an economic paper
+% add packages as you wish
+
+\documentclass[11pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\synctex=-1
+\usepackage{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage[authoryear]{natbib}
+
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false,hidelinks]{hyperref}
+% \usepackage{breakurl}
+
+
+\title{The title of the paper}
+
+\author{An economist}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+copy and paste your text here.
+
+Example of bibtex citation
+
+Our paper is also related to the recent literature on latent group
+structures in panel data analysis \citep{su2016identifying}.
+\citet{shi2016econometric} was a great paper.
+
+blablablabla...
+
+\bibliographystyle{chicago}
+\bibliography{regressorComb}
+
+\end{document}
