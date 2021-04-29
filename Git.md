@@ -6,28 +6,28 @@ Zhentao Shi and Zhan Gao
 
 ---
 
-Git is a version control system useful when developing and maintaining
-coding projects as well as preparing long documents.
+Git is a version control system useful when developing and maintaining coding projects as well as preparing long documents. 
 
-Free Git books and tutorials are available online.
-Self-learning is important.
+With Git, we no longer need to save historical versions `paper v1.tex`, `paper v2.tex` up to even `paper v11.tex`. It is easy to track changes to code and text files and maintain a history  of changes. In addition, it is safe to do experiments and tests on different branches of development without changing the current main branch. More importantly, Git, together with online platforms like Github, empowers collaboration. Researcher are able to work on the same project, even on the same file, separately, see what other people have done and resolve conflicts when needed. 
 
-* [Atlassian Online Tutorial](https://www.atlassian.com/git/tutorials)
-* [Udacity Course](https://www.udacity.com/course/how-to-use-git-and-github--ud775)
-* [CodeAcademy Course](https://www.codecademy.com/learn/learn-git)
-* [Pro Git](http://git-scm.com/book/en/v2)
-* Many video tutorials, for example [this one](https://www.youtube.com/watch?v=SWYqp7iY_Tc).
+Free Git books and tutorials are available online. Self-learning is important. 
 
-We introduce some essential Git commands.
-There are two ways to interact with Git. Git provides a command line tool Git Bash,
-and there are many free Git GUIs available (We recommend [SourceTree](https://www.sourcetreeapp.com/)).
-Even if we use a GUI, knowing the basic commands is helpful.
+* [Atlassian Online Tutorial](https://www.atlassian.com/git/tutorials) This online tutorial is a good starting point to learn the basics of Git.
+* The version control module from [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), offered by MIT, is also a great reference for beginners. The [online notes](https://missing.csail.mit.edu/2020/version-control/) is accompanied with a [lecture video](https://www.youtube.com/watch?v=2sjqTHE0zok&t=1s&ab_channel=MissingSemester). The course has been translated to Chinese, see [Chinese version](https://missing-semester-cn.github.io/).
+  *Though targeted at computer science majors, this open course is also helpful for econometrics researchers. Modules other than the version control one are also recommended.*
+* If more elaboration is needed, online courses, [Udacity Course](https://www.udacity.com/course/how-to-use-git-and-github--ud775) and [CodeAcademy Course](https://www.codecademy.com/learn/learn-git) for examples, and other video tutorial are helpful. 
+* [Oh Shit, Git!?!](https://ohshitgit.com/) is a short guide on how to recover from some common Git mistakes.
+* A comprehensive reference: [Pro Git](http://git-scm.com/book/en/v2).
+
+We introduce some essential Git commands. There are two ways to interact with Git. Git provides a command line tool Git Bash, and there are many free Git GUIs available (We recommend [SourceTree](https://www.sourcetreeapp.com/)). Even if we use a GUI, knowing the basic commands is helpful.
 
 
 ## Basic Git Commands
 
 ### Local
 
+* `git help <command>` gets help for a git command
+* `git init`  creates a new git repo, with data stored in the `.git` directory
 * `git status` inspects the contents of the working directory and staging area.
 * `git add filename` adds files to the staging area from working directory.
 * `git add filename1 filename2` adds multiple files to the staging area.
@@ -35,6 +35,7 @@ Even if we use a GUI, knowing the basic commands is helpful.
 * `git commit` stores changes from the staging area to the repository.
 * `git commit -m "Commit Message"` The commit message must be in the quotation marks.
 * `git log` displays historical commits stored chronologically in the repository.
+* `git log --all --graph --decorate` visualizes history as a DAG
 * `git config --global user.name <name>`
 * `git config --global user.email <email>`
 * `git tag -a v1.0 -m 'message' [optional:commit-id]`
