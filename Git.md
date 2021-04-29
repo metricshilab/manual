@@ -16,7 +16,6 @@ Free Git books and tutorials are available online. Self-learning is important.
 * The version control module from [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), offered by MIT, is also a great reference for beginners. The [online notes](https://missing.csail.mit.edu/2020/version-control/) is accompanied with a [lecture video](https://www.youtube.com/watch?v=2sjqTHE0zok&t=1s&ab_channel=MissingSemester). The course has been translated to Chinese, see [Chinese version](https://missing-semester-cn.github.io/).
   *Though targeted at computer science majors, this open course is also helpful for econometrics researchers. Modules other than the version control one are also recommended.*
 * If more elaboration is needed, online courses, [Udacity Course](https://www.udacity.com/course/how-to-use-git-and-github--ud775) and [CodeAcademy Course](https://www.codecademy.com/learn/learn-git) for examples, and other video tutorial are helpful. 
-* [Oh Shit, Git!?!](https://ohshitgit.com/) is a short guide on how to recover from some common Git mistakes.
 * A comprehensive reference: [Pro Git](http://git-scm.com/book/en/v2).
 
 We introduce some essential Git commands. There are two ways to interact with Git. Git provides a command line tool Git Bash, and there are many free Git GUIs available (We recommend [SourceTree](https://www.sourcetreeapp.com/)). Even if we use a GUI, knowing the basic commands is helpful.
