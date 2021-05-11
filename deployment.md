@@ -1,5 +1,8 @@
-await Ting Hin to contriute. 
+await Ting Hin to contribute. Use Heroku as an example.
 
-use Heroku as an example.
 
-In the future, perhaps Zt will also add a bit about experience at AWS.
+
+
+## Future work
+
+In the future, perhaps Zt will add a bit about experience at AWS.
