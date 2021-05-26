@@ -1,6 +1,6 @@
 # R packages
 
-A sample package developed by the group: https://github.com/zhentaoshi/fsPDA/tree/master/R_pkg_fsPDA/data
+A sample package developed by the group: https://github.com/zhentaoshi/fsPDA/tree/master/R_pkg_fsPDA
 
 Summary notes of the book [R Packages](https://r-pkgs.org/index.html).
 
