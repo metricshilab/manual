@@ -116,7 +116,7 @@ Most remote servers are build with Linux system without an graphic interface. To
   ```
 
   1. You can check `PID` with `top`; 
-  2. `pkill` is more convenient since you can kill all the processes of a program at a time when you are doing parallel computing. 
+  2. `pkill` is more convenient for stopping parallel computing as you can kill all the processes of a program at a same time. 
 
 - Check the command history: 
 
@@ -163,10 +163,11 @@ Here `nohup` stands for no hang-up, which allows you to close your terminal with
 
 There are several important things should be noticed. 
 
-1. `log.out` is the log file that all "print", "error" and etc. will be written in, and ideally it can be named by any text format. Do remember to write enough print-out messages in your code, especially when doing loops, thus you can check the progress of your program in the log file. 
+1. `log.out` is the log file that all "print", "error" and etc. will be written in, and ideally it can be named by any text format. Do remember to write enough print-out messages in your code, especially when doing loops, thus you can check the progress of your program in the log file. Remember to often check for the progress. 
 2. The current directory when you start to run your program is deemed as your working directory for your code. Please make sure that your "read" and "write" paths in the code are relatively based on this directory, or you can write a "change-working-directory" sentence at the beginning of the code. 
 3. After starting your program in the background, use `top` to make sure that your program is running. 
 4. Also, before running your program, use `top` to see other users' working status. Especially when doing parallel programming, make sure that you have enough computation power to meet your demand, and always remember to save some power for other users. 
+5. Before the formal execution, run your code with few repetition times and small sample data to make sure that there is no bug in your code. You do not want to receive an error message after running the program for a very long time. 
 
 Difficult in choosing programming languages? 
 
@@ -184,7 +185,7 @@ There are three servers provided in our department. *EconSuper* is for teachers 
 
 * *StudentHPC*: `studenthpc@econ.cuhk.edu.hk`
 
-  RStudio: http://econsuper.econ.cuhk.edu.hk:8787/
+  RStudio: http://studenthpc.econ.cuhk.edu.hk:8787/
 
 * *SCRP*: `scrp-login.econ.cuhk.edu.hk`
 
