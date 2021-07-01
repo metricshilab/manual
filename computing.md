@@ -32,13 +32,13 @@ Here we recommend some software/apps to use based on our personal experience aft
 | iOS     | FE File Explorer    | Prompt; Termius    |
 | Android | AndFTP              | JuiceSSH           |
 
-iOS and Android apps are listed for several reasons. Firstly, nowadays Tablets become more and more powerful, especially working together with a keyboard. Some new tablets like iPad Pro (after 2020) and Huawei MatePad Pro could be more convenient to be used as a terminal device for remote servers than laptops. The advantages mostly lie in portability, battery endurance and cellular network, thus you can work almost everywhere on a server as long as you have a tablets connected to 4G/5G network. Additionally, some time you will need to check on the progress of your program running on the server with you phone, say when you have a meal outdoors, which also could be cool by the way! 
+iOS and Android apps are listed for several reasons. Firstly, nowadays Tablets become more and more powerful, especially working together with a keyboard. Some new tablets like iPad Pro (after 2020) and Huawei MatePad Pro could be more convenient to be used as a terminal device for remote servers than laptops. The advantages mostly lie in portability, battery endurance and cellular network, and thus you can work almost everywhere on a server as long as you have a tablets connected to 4G/5G network. Additionally, some time you will need to check on the progress of your program running on the server with you phone, say when you have a meal outdoors, which also could be cool by the way! 
 
 
 
 #### Git
 
-An alternative solution to do file upload and download on a server is to use git. Only need to regard the server as your local computer, and then you can do `clone`, `pull`, `add`, `commit`, `push`, and etc. See `Git.md` for more git commands. The most charming thing to use git rather than ftp/sftp is that the upload (push) and download (pull) are executed only on the server side. There are two benefits at least: 
+An alternative solution to upload and download files on a server is to use git. In the terminal, you can do `clone`, `pull`, `add`, `commit`, `push`, and etc. See `Git.md` for more git commands. The most charming thing to use git rather than ftp/sftp is that the upload (push) and download (pull) are executed only on the server side. There are two benefits at least: 
 
 1. It will cost you nearly zero network data usage, which is seriously important when using 4G/5G cellular network to work remotely. You do not want to think of uploading 1GB file to the server with ftp service using your data usage. 
 2. The network stability during the transmission will be only depend on the server side, which helps a lot when the university VPN is not stable. 
