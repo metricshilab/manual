@@ -32,7 +32,7 @@ Here we recommend some software/apps to use based on our personal experience aft
 | iOS     | FE File Explorer    | Prompt; Termius    |
 | Android | AndFTP              | JuiceSSH           |
 
-iOS and Android apps are listed for several reasons. Firstly, nowadays Tablets become more and more powerful, especially working together with a keyboard. Some new tablets like iPad Pro (after 2020) and Huawei MatePad Pro could be more convenient to be used as a terminal device for remote servers than laptops. The advantages mostly lie in portability, battery endurance and cellular network, and thus you can work almost everywhere on a server as long as you have a tablets connected to 4G/5G network. Additionally, some time you will need to check on the progress of your program running on the server with you phone, say when you have a meal outdoors, which also could be cool by the way! 
+iOS and Android apps are also listed for the following reasons. Firstly, nowadays Tablets become more and more powerful, especially working together with a keyboard. Some new tablets like iPad Pro (after 2020) and Huawei MatePad Pro could be more convenient to be used as a terminal device for remote servers than laptops. The advantages mostly lie in portability, battery endurance and cellular network, and thus you can work almost everywhere on a server as long as you have a tablets connected to 4G/5G network. Additionally, some time you will need to check on the progress of your program running on the server with you phone, say when having a meal outdoors, which also could be cool by the way! 
 
 
 
@@ -47,14 +47,94 @@ An alternative solution to upload and download files on a server is to use git. 
 
 #### Useful Linux Commands
 
+Most remote servers are build with Linux system without an graphic interface. To communicate with the server, we need to use Linux commands. 
 
+- Login to the server: 
+
+  ```
+  ssh userName@serverAddress
+  ```
+
+- Change directory: 
+
+  ```
+  cd directory
+  ```
+
+  1. `directory` can be an absolute directory or relative directory with respect to the current location; 
+  2. `*`: the current directory; 
+  3. `..`: the parent directory; 
+  4. `~`: your user's root directory. 
+
+- List files under the current folder: 
+
+  ```
+  ls
+  ```
+
+- Create a new folder: 
+
+  ```
+  mkdir -p dirName
+  ```
+
+- Copy: 
+
+  ```
+  cp -r oldDir newDir
+  ```
+
+- Move or rename: 
+
+  ```
+  mv oldDir newDir
+  ```
+
+- Delete: 
+
+  ```
+  rm -rf fileName
+  ```
+
+- Check file size: 
+
+  ```
+  du -sh fileName
+  ```
+
+- Check the process: 
+
+  ```
+  top
+  ```
+
+- Terminate a process: 
+
+  ```
+  pkill -9 processName
+  ```
+
+- Check the command history: 
+
+  ```
+  history
+  ```
+
+  1. You can also type the "up" button to go through the recent commands. 
+  2. `history -c`: clear all the command history. 
+
+
+
+#### Run Program
+
+Although you can use command `R`, `python`, `matlab`, `stata-mp` to open these software programs in the terminal, you may not like to use them in this way for the inconvenience. 
 
 
 
 #### Scientific Computing Environment in the Department
 
-* Econsuper
-* student remote computer
+* EconSuper
+* StudentHPC
 * SCRP
 
 
