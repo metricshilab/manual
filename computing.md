@@ -45,9 +45,9 @@ An alternative solution to upload and download files on a server is to use git. 
 
 
 
-#### Useful Linux Commands
+#### Linux Commands
 
-Most remote servers are built with Linux system without an graphic interface. To communicate with the server, we need to use Linux commands. Here we list some mostly used commands as following. 
+Most remote servers are built upon the Linux system without an graphic interface. To communicate with the server, we count on the Linux commands. Here we list some most useful commands as following. 
 
 - Login to the server: 
 
@@ -131,9 +131,9 @@ Most remote servers are built with Linux system without an graphic interface. To
 
 #### Run Program
 
-Although you can use command `R`, `python`, `matlab`, `stata-mp` to open these software programs in the terminal, you may not like to use them in this way for the super inconvenience. Moreover, some software may provide a graphic interface by X-forwarding service, e.g. try `xstata-mp`. However, we do not encourage you to work in this way either, for the reason that you need to install X11 program on your local computer and the reaction is quite unstable. RStudio and Jupyter Notebook provide a better solution that you can use them within an internet browser. 
+The commands  `R`, `python`, `matlab`, `stata-mp` can open these programs in the terminal interactively, but the user interface is unfriendly. Although some software offers a graphic interface by X-forwarding service, e.g. try `xstata-mp`. However, we do not encourage in this way either, as the X11 program must be installed on your local computer and the reaction is quite unstable. RStudio and Jupyter Notebook provide a better solution via an internet browser. 
 
-We strongly suggest you to write your code with your local editor, and then upload your code and data to the server to run your program remotely. Normally, for a Monte Carlo simulation program, we need to repeat the simulation for at least thousands of time, which may cost us a few minutes to several days. By running your program with no hang-up in the background, you can close your terminal to do something else while waiting for the results. For different software, the commands are as following. 
+We recommend writing the code in a local editor, and then upload the code and data to the server to execute remotely. Normally, for a Monte Carlo simulation program, we need to repeat the simulation for thousands of times, which may cost a few minutes to several days. By running the program with no hang-up in the background, it is safe to close the terminal while waiting for the results. For different software, the commands are as following. 
 
 - R: 
 
@@ -159,19 +159,17 @@ We strongly suggest you to write your code with your local editor, and then uplo
   nohup stata fileName.do > log.out &
   ```
 
-Here `nohup` stands for no hang-up, which allows you to close your terminal without stopping your program; and `&` stands for running in the background, which allows you to do something else within the terminal when your program is running. 
+Here `nohup` stands for no hang-up, which allows us to close the terminal without terminating the program; and `&` stands for running in the background, which allows us to do something else within the terminal instead of waiting until the execution is complete. 
 
-There are several important things should be noticed. 
+There are several important things to noticed. 
 
-1. `log.out` is the log file that all "print", "error" and etc. will be written in, and ideally it can be named by any text format. Do remember to write enough print-out messages in your code, especially when doing loops, thus you can check the progress of your program in the log file. Remember to often check for the progress. 
-2. The current directory when you start to run your program is deemed as your working directory for your code. Please make sure that your "read" and "write" paths in the code are relatively based on this directory, or you can write a "change-working-directory" sentence at the beginning of the code. 
-3. After starting your program in the background, use `top` to make sure that your program is running. 
-4. Also, before running your program, use `top` to see other users' working status. Especially when doing parallel programming, make sure that you have enough computation power to meet your demand, and always remember to save some power for other users. 
-5. Before the formal execution, run your code with few repetition times and small sample data to make sure that there is no bug in your code. You do not want to receive an error message after running the program for a very long time. 
+1. `log.out` is the log file that all "print", "error" and etc. will be written in, and ideally it can be named by any text format. Do remember to write enough print-out messages in your code, especially when doing loops, and thus we can check the progress of the program in the log file. Remember to check the progress. 
+2. The current directory when we start to run our program is taken as the working directory. Please make sure that the "read" and "write" paths in the code are *relatively* to this directory. Otherwise, we write a "change-working-directory" sentence at the beginning of the code. 
+3. After starting some programs in the background, use `top` to make sure that they are in the process. 
+4. Also, before running programs, use `top` to see other users' working status. This is important especially when doing parallel programming. Make sure that we have enough computation resources to meet our demand, and always remember to spare some resources for other users. 
+5. Before the formal execution, run the code with few repetitions and small sample data to make sure that there is no bug in your code. No one want to receive an error message after running the program for a very long time. 
 
-Having difficulties in choosing programming languages? 
 
-- 陈强-Stata, R与Python：我该选哪个语言-哔哩哔哩 https://b23.tv/tkAcHe
 
 
 
@@ -191,7 +189,7 @@ There are three servers provided in our department. *EconSuper* is for teachers 
 
   RStudio and Jupyter Notebook: http://scrp-login.econ.cuhk.edu.hk/
 
-Originally, *EconSuper* and *StudentHPC* only provide R, Matlab and Stata, while *SCRP* also provides Python. You have authorities to install small software programs and packages under your own folder. For large software installation, please contact our technician. 
+Originally, *EconSuper* and *StudentHPC* only provide R, Matlab and Stata, while *SCRP* also provides Python. One has permission to install small software programs and packages under one's own designated folder. For large software installation, please contact our technicians in our department. 
 
 SCRP is the newest server in our department. For the information about SCRP, please see http://scrp.econ.cuhk.edu.hk. 
 
