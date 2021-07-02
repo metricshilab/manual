@@ -47,7 +47,7 @@ An alternative solution to upload and download files on a server is to use git. 
 
 #### Useful Linux Commands
 
-Most remote servers are build with Linux system without an graphic interface. To communicate with the server, we need to use Linux commands. Here we list some mostly used commands as following. 
+Most remote servers are built with Linux system without an graphic interface. To communicate with the server, we need to use Linux commands. Here we list some mostly used commands as following. 
 
 - Login to the server: 
 
@@ -169,7 +169,7 @@ There are several important things should be noticed.
 4. Also, before running your program, use `top` to see other users' working status. Especially when doing parallel programming, make sure that you have enough computation power to meet your demand, and always remember to save some power for other users. 
 5. Before the formal execution, run your code with few repetition times and small sample data to make sure that there is no bug in your code. You do not want to receive an error message after running the program for a very long time. 
 
-Difficult in choosing programming languages? 
+Having difficulties in choosing programming languages? 
 
 - 陈强-Stata, R与Python：我该选哪个语言-哔哩哔哩 https://b23.tv/tkAcHe
 
