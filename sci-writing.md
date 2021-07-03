@@ -7,6 +7,10 @@ This is an onlne course on English writing. I recommend students to follow.
 
 
 
+
+When possible, avoid generic verbs such as "do", "have", and "be", etc. They are plain and boring. Use accurate verbs to engage users.
+
+
 Quote from the R package book (advice for writing vignettes)
 
 > - I strongly recommend literally anything written by Kathy Sierra. Her old blog, [Creating passionate users](https://headrush.typepad.com/) is full of advice about programming, teaching, and how to create valuable tools. I thoroughly recommend reading through all the older content. Her new blog, [Serious Pony](https://seriouspony.com/blog/), doesn’t have as much content, but it has some great articles.
