@@ -73,7 +73,7 @@ The following diagram shows the relationships between the (La)TeX source code an
 
 
 
-[img](https://github.com/metricshilab/manual/blob/main/figure%201.png)
+![image](https://github.com/metricshilab/manual/blob/main/figure%201.png)
 
 
 The boxed red text represents the file formats, the blue text on the arrows represents the commands you have to use, the small dark green text under the boxes represents the image formats that are supported. Any time you pass through an arrow you lose some information, which might decrease the quality of your document. Therefore, in order to achieve the highest quality in your output file, you should choose the shortest route to reach your target format. This is probably the most convenient way to obtain an output in your desired format anyway. Starting from a LaTeX source, the best way is to use only latex for a DVI output or pdflatex for a PDF output, converting to PostScript only when it is necessary to print the document. Most of the programs should be already within your LaTeX distribution; the others come with Ghostscript, which is a free and multi-platform software as well.
