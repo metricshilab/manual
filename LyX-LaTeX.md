@@ -129,7 +129,7 @@ More information of the manual of LaTeX could be found in the publications at ho
 All the commands discussed in palin LaTeX can be used in LaTeX without loading any external package. What is here is enough if you just want to write a few formulas, otherwise you'd better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematics.
 
 #### Complicated Mathematics: Amsmath Package
-If you are writing a document that needs only a few simple mathematical formulas, then you can generally use plain LaTeX: it will give you all of the tools you need. However, if you are writing a scientific document that contains numerous complicated formulas, then you will most likely need to use the amsmath package. It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
+If you are writing a document that needs only a few simple mathematical formulas, then you can generally use plain LaTeX: it will give you all of the tools you need. However, if you are writing a scientific document that contains numerous complicated formulas, then you will most likely need to use the [amsmath package](https://ctan.org/pkg/amsmath). It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
 
 
 ## Markdown
