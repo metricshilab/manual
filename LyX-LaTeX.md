@@ -7,18 +7,18 @@ LaTeX is the *de facto* editing language for scientific research with heavy math
 
 ## LaTeX
 
-As a heavy weight champion, LaTeX is a powerful typesetting system, used for producing scientific and mathematical documents of high typographic quality.
+As a heavy weight champion, LaTeX is a powerful typesetting system, used for producing scientific and mathematical documents of high typographic quality. We provide two latex template for research papers and academic presentations.
+
+* [English paper](https://github.com/metricshilab/manual/blob/main/word-processing/latex-template.tex)  
+* [Chinese paper](https://github.com/metricshilab/manual/blob/main/word-processing/latex_template_cn.tex)
+* [Chinese presentation (beamer)](https://github.com/metricshilab/manual/blob/main/word-processing/beamer_template_cn.tex)
 
 
 ### Introduction
 
-***LaTeX*** (pronounced either “Lah-tech”or, less often, “Lay-tech”) is a macro package based on ***TeX*** created by `Leslie Lamport`. Mike Unwalla explains where it came from and what it can do:
+***LaTeX*** (pronounced either “Lah-tech”or, less often, “Lay-tech”) is a macro package based on ***TeX*** created by `Leslie Lamport`. Mike Unwalla explains where it came from and what it can do: [*a one-page high-level overview*](https://www.techscribe.co.uk/ta/latex-introduction.pdf)
 
-* *a one-page high-level overview*: https://www.techscribe.co.uk/ta/latex-introduction.pdf
-
-See more information at the homepage:
-
-* *Homepage*: https://www.latex-project.org/
+See more information at the [latex project homepage](https://www.latex-project.org/)
 
 #### Skills needed
 
