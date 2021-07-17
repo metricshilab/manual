@@ -2,7 +2,7 @@
 
 For non scientific writing, MS Word is convenient choice and there are free substitutes such as [WPS word](https://www.wps.com/).
 
-LaTeX is the de facto editing language for scientific research with a heavy mathematical component.
+LaTeX is the *de facto* editing language for scientific research with heavy mathematical components.
 
 
 ## LaTeX
@@ -22,10 +22,10 @@ See more information at the homepage:
 
 #### Skills needed
 
-LaTeX is a very easy system to learn, and requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that you are completely fluent and familiar with using your computer before you start. Specifically, effective use of this document requires that you already know and understand the following very thoroughly:
+LaTeX requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that you are completely fluent and familiar with using your computer before you start. Specifically, effective use of this document requires that you already know and understand the following very thoroughly:
 
 
--  how to use a good plain-text editor (not a wordprocessor like OpenOffice, WordPerfect, or Microsoft Word).
+-  how to use a good plain-text editor (not a word processor like OpenOffice, WordPerfect, or Microsoft Word).
 
 -  where to find all 95 of the printable ASCII characters on your keyboard and what they mean, and how to type accents and symbols, if you use them.
 
@@ -41,7 +41,7 @@ LaTeX is a very easy system to learn, and requires no specialist knowledge, alth
 At a minimum, you will need the following programs to edit LaTeX:
 
 
--  An editor. You can use a basic text editor like notepad, but a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX enviroments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
+-  An editor. You can use a basic text editor like notepad, but a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX environments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
 
 -  The LaTeX binaries and style sheets. e.g. `MiKTeX` http://www.miktex.org/ for Windows, `teTeX` http://www.tug.org/teTeX/ for `Unix/Linux` and `teTeX` for Mac OS X http://www.rna.nl/tex.html.
 
@@ -65,7 +65,7 @@ Here are the main programs you expect to find in any (La)TeX distribution:
 -  *dvipdfm*: an improved version of dvipdf
 
 
-When `LaTeX` was created, the only format it could create was `DVI`; then the PDFsupport was added by `pdflatex`, even if several people still don't use it. As it is clear from this short list, PDF files can be created with both `pdflatex` and `dvipdfm`; some think that the output of pdflatex is better than the output of dvipdfm. `DVI` is an old format, and it does not support hyperlinks for example, while PDF does, so passing through DVI you will bring all the bad points of that format to PDF.
+When `LaTeX` was created many decades ago, the only format it could create was `DVI`; then the PDFsupport was added by `pdflatex`. As it is clear from this short list, PDF files can be created with both `pdflatex` and `dvipdfm`; some think that the output of pdflatex is better than the output of dvipdfm. `DVI` is an old format, and it does not support hyperlinks for example. We do not encourage using `DVI`.
 
 Note that, since LaTeX is just a collection of macros for TeX, if you compile a plain TeX document with a LaTeX compiler (such as pdflatex) it will work, while the opposite is not true: if you try to compile a LaTeX source with a TeX compiler you will get only a lot of errors.
 
@@ -91,7 +91,6 @@ Yang Chen
 July 2021
 
 Happiness is largely a choice. 
-
 ```
 To produce this in most typesetting or word-processing systems, the author would have to decide what layout to use, so would select (say) 18pt Times Roman for the title, 12pt Times Italic for the name, and so on. This has two results: authors wasting their time with designs; and a lot of badly designed documents!
 
@@ -126,9 +125,9 @@ More information of the manual of LaTeX could be found in the publications at ho
 
 #### Basic Mathematics: plain LaTeX
 
-All the commands discussed in palin LaTeX can be used in LaTeX without loading any external package. What is here is enough if you just want to write a few formulas, otherwise you'd better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematics.
+All the commands discussed in plain LaTeX can be used in LaTeX without loading any external package. What is here is enough if you just want to write a few formulas; otherwise you'd better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematic symbols and expressions.
 
-#### Complicated Mathematics: Amsmath Package
+#### Complex Mathematics: the amsmath Package
 If you are writing a document that needs only a few simple mathematical formulas, then you can generally use plain LaTeX: it will give you all of the tools you need. However, if you are writing a scientific document that contains numerous complicated formulas, then you will most likely need to use the [amsmath package](https://ctan.org/pkg/amsmath). It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
 
 
@@ -141,4 +140,4 @@ A light weight language for online communication.
 
 ## LyX
 
-A visiual alternative to LaTeX
+A visual alternative to LaTeX
