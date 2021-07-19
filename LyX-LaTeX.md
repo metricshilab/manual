@@ -22,12 +22,12 @@ See more information at the [latex project homepage](https://www.latex-project.o
 
 #### Skills needed
 
-LaTeX requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that you are completely fluent and familiar with using your computer before you start. Specifically, effective use of this document requires that you already know and understand the following very thoroughly:
+LaTeX requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that we are completely fluent and familiar with using our computer before we start. Specifically, effective use of this document requires that we already know and understand the following very thoroughly:
 
 
 -  how to use a good plain-text editor (not a word processor like OpenOffice, WordPerfect, or Microsoft Word).
 
--  where to find all 95 of the printable ASCII characters on your keyboard and what they mean, and how to type accents and symbols, if you use them.
+-  where to find all 95 of the printable ASCII characters on our keyboard and what they mean, and how to type accents and symbols, if we use them.
 
 -  how to create, open, save, close, rename, move, and delete files and folders (directories).
 
@@ -38,13 +38,12 @@ LaTeX requires no specialist knowledge, although literacy and some familiarity w
 
 #### Prerequisites
 
-At a minimum, you will need the following programs to edit LaTeX:
+At a minimum, we will need the following programs to edit LaTeX:
 
 
--  An editor. You can use a basic text editor like notepad, but a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX environments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
+-  An editor. We can use a basic text editor like notepad, but a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX environments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
 
 -  The LaTeX binaries and style sheets. e.g. `MiKTeX` http://www.miktex.org/ for Windows, `teTeX` http://www.tug.org/teTeX/ for `Unix/Linux` and `teTeX` for Mac OS X http://www.rna.nl/tex.html.
-
 
 -   A `DVI` viewer to view and print the final result. Usually, a DVI viewer is included in the editor or is available with the binary distribution. 
 
@@ -54,7 +53,7 @@ A distribution of LaTeX, with many packages, add-ins, editors and viewers for Un
 
 #### Applications within a distribution
 
-Here are the main programs you expect to find in any (La)TeX distribution:
+Here are the main programs we expect to find in any (La)TeX distribution:
 
 -  *tex*: the simplest compiler: generates DVI from TeX source
 -  *pdftex*: generates PDF from TeX source
@@ -67,7 +66,7 @@ Here are the main programs you expect to find in any (La)TeX distribution:
 
 When `LaTeX` was created many decades ago, the only format it could create was `DVI`; then the PDFsupport was added by `pdflatex`. As it is clear from this short list, PDF files can be created with both `pdflatex` and `dvipdfm`; some think that the output of pdflatex is better than the output of dvipdfm. `DVI` is an old format, and it does not support hyperlinks for example. We do not encourage using `DVI`.
 
-Note that, since LaTeX is just a collection of macros for TeX, if you compile a plain TeX document with a LaTeX compiler (such as pdflatex) it will work, while the opposite is not true: if you try to compile a LaTeX source with a TeX compiler you will get only a lot of errors.
+Note that, since LaTeX is just a collection of macros for TeX, if we compile a plain TeX document with a LaTeX compiler (such as pdflatex) it will work, while the opposite is not true: if you try to compile a LaTeX source with a TeX compiler you will get only a lot of errors.
 
 The following diagram shows the relationships between the (La)TeX source code and all the formats you can create from it:
 
@@ -76,9 +75,9 @@ The following diagram shows the relationships between the (La)TeX source code an
 ![image](https://github.com/metricshilab/manual/blob/main/figure%201.png)
 
 
-The boxed `red` text represents the file formats, the `blue` text on the arrows represents the commands you have to use, the small `dark green` text under the boxes represents the image formats that are supported. Any time you pass through an arrow you lose some information, which might decrease the quality of your document. Therefore, in order to achieve the highest quality in your output file, you should choose the shortest route to reach your target format. 
+The boxed `red` text represents the file formats, the `blue` text on the arrows represents the commands we have to use, the small `dark green` text under the boxes represents the image formats that are supported. Any time we pass through an arrow we lose some information, which might decrease the quality of our document. Therefore, in order to achieve the highest quality in our output file, we should choose the shortest route to reach our target format. 
 
-This is probably the most convenient way to obtain an output in your desired format anyway. Starting from a LaTeX source, the best way is to use only latex for a DVI output or pdflatex for a PDF output, converting to PostScript only when it is necessary to print the document. Most of the programs should be already within your LaTeX distribution; the others come with Ghostscript, which is a free and multi-platform software as well.
+This is probably the most convenient way to obtain an output in our desired format anyway. Starting from a LaTeX source, the best way is to use only latex for a DVI output or pdflatex for a PDF output, converting to PostScript only when it is necessary to print the document. Most of the programs should be already within our LaTeX distribution; the others come with Ghostscript, which is a free and multi-platform software as well.
 
 
 ### An Useful Example
@@ -94,12 +93,12 @@ Happiness is largely a choice.
 ```
 To produce this in most typesetting or word-processing systems, the author would have to decide what layout to use, so would select (say) 18pt Times Roman for the title, 12pt Times Italic for the name, and so on. This has two results: authors wasting their time with designs; and a lot of badly designed documents!
 
-LaTeX is based on the idea that it is better to leave document design to document designers, and to let authors get on with writing documents. So, in LaTeX you would input this document as:
+LaTeX is based on the idea that it is better to leave document design to document designers, and to let authors get on with writing documents. So, in LaTeX we would input this document as:
 
 ```LaTeX
 \documentclass{article}
 \title{Happiness}
-\author{Yang Chen}
+\author{Yang CHEN}
 \date{July 2021}
 \begin{document}
    \maketitle
@@ -112,7 +111,7 @@ Or, in English:
 
 This document is an article.
 Its title is *Happiness*
-Its author is *Yang Chen*.
+Its author is *Yang CHEN*.
 It was written in *July 2021*.
 The document consists of a title followed by the text *Happiness is largely a choice*.
 
@@ -125,10 +124,10 @@ More information of the manual of LaTeX could be found in the publications at ho
 
 #### Basic Mathematics: plain LaTeX
 
-All the commands discussed in plain LaTeX can be used in LaTeX without loading any external package. What is here is enough if you just want to write a few formulas; otherwise you'd better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematic symbols and expressions.
+All the commands discussed in plain LaTeX can be used in LaTeX without loading any external package. What is here is enough if we just want to write a few formulas; otherwise we would better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematic symbols and expressions.
 
 #### Complex Mathematics: the amsmath Package
-If you are writing a document that needs only a few simple mathematical formulas, then you can generally use plain LaTeX: it will give you all of the tools you need. However, if you are writing a scientific document that contains numerous complicated formulas, then you will most likely need to use the [amsmath package](https://ctan.org/pkg/amsmath). It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
+If we are writing a document that needs only a few simple mathematical formulas, then we can generally use plain LaTeX: it will give we all of the tools we need. However, if we are writing a scientific document that contains numerous complicated formulas, then we will most likely need to use the [amsmath package](https://ctan.org/pkg/amsmath). It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
 
 
 ## Markdown
