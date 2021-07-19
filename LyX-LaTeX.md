@@ -126,8 +126,61 @@ More information of the manual of LaTeX could be found in the publications at ho
 
 All the commands discussed in plain LaTeX can be used in LaTeX without loading any external package. What is here is enough if we just want to write a few formulas; otherwise we would better read the advanced section as well. In any case, this is a necessary introduction to how LaTeX can manage mathematic symbols and expressions.
 
+- Mathematics environments
+
+  - `text`: text formulas are displayed in-line, that is, within the body of text where it is declared. e.g., I can say that `a + a = 2a` within this sentence.
+
+  - `displayed`: displayed formulas are separate from the main text.
+
+Additionally, there is a second possible environment for the displayed type of formulas: `equation`. The difference between this and displaymath is that equation also adds sequential equation numbers by the side.
+
+If we are typing *text* normally, we are said to be in *text mode*, while we are typing within one of those *mathematical environments*, we are said to be in *math mode*, that has some differences compared to the text mode:
+
+  - Most spaces and line breaks do not have any significance, as all spaces are either derived logically from the mathematical expressions, or have to be specified with special commands such as `\quad`
+
+  - Empty lines are not allowed. Only one paragraph per formula.
+
+  - Each letter is considered to be the name of a variable and will be typeset as such. If you want to typeset normal text within a formula (normal upright font and normal spacing) then you have to enter the text using dedicated commands.
+
+
+As maths require special environments, there are naturally the appropriate environment names we can use in the standard way. Unlike most other environments, however, there are some handy shorthands to declaring our formulas. The following table summarizes them:
+
+
+ |   **Type**     | **Environment**     | **TeX shorthand**         |   **LaTeX shorthand**        |
+    | ------ | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+    | Text   | `\begin{math}...\end{math}` |`\(...\)` |  $...$       |
+    | Displayed | `\begin{displaymath}...\end{displaymath}`        | `\[...\]`            |  $$...$$       |
+
+
+- Symbols
+
+Mathematics has lots and lots of symbols! If there is one aspect of maths that is difficult in Latex it is trying to remember how to produce them. There are of course a set of symbols that can be accessed directly from the keyboard:
+
+` + - = ! / ( ) [ ] < > | ’ : `
+
+Beyond those listed above, distinct commands must be issued in order to display the desired symbols. And there are a lot! `Greek letters, set and relations symbols, array, arrows, binary operators, etc.` Too many to remember, and in fact, they would overwhelm this manual. 
+
+For example, using the `array` environment we can create table-like structures in math mode. The array environment is basically equivalent to the tabular environment. If we want to create a `matrix`, Latex, by default, doesn't have a specific command to use, but we can create a similar structure using array. We can use the `array` to arrange and align our data as we want, and then enclose it with appropriate left and right brackets, and this will give we our matrix. For a simple *2x2 matrix*:
+
+```LaTeX
+
+\[ \left[
+\begin{array}{ c c }
+1 & 2 \\
+3 & 4
+\end{array} \right]
+\]
+
+```
+
+See more Latex maths symbols in *Chapter 3* of [*The not so Short Introduction to LaTeX*](https://tobi.oetiker.ch/lshort/lshort.pdf)
+
 #### Complex Mathematics: the amsmath Package
+
 If we are writing a document that needs only a few simple mathematical formulas, then we can generally use plain LaTeX: it will give we all of the tools we need. However, if we are writing a scientific document that contains numerous complicated formulas, then we will most likely need to use the [amsmath package](https://ctan.org/pkg/amsmath). It introduces several new commands that are more powerful and easy-to-use than the ones provided by plain LaTeX.
+
+
+
 
 
 ## Markdown
