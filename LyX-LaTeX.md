@@ -146,7 +146,7 @@ If we are typing *text* normally, we are said to be in *text mode*, while we are
 As maths require special environments, there are naturally the appropriate environment names we can use in the standard way. Unlike most other environments, however, there are some handy shorthands to declaring our formulas. The following table summarizes them:
 
 |   **Type**     | **Environment**     | **TeX shorthand**         |   **LaTeX shorthand**        |
-| ------ | --------------------------------------- | --------------------------------------- | --------------------------------------- |
+| ---------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
 | Text   | `\begin{math}...\end{math}` |`\(...\)` |  $...$       |
 | Displayed | `\begin{displaymath}...\end{displaymath}`        | `\[...\]`            |  $$...$$       |
 
