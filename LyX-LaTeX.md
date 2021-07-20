@@ -16,18 +16,18 @@ As a heavy weight champion, LaTeX is a powerful typesetting system, used for pro
 
 ### Introduction
 
-***LaTeX*** (pronounced either “Lah-tech”or, less often, “Lay-tech”) is a macro package based on ***TeX*** created by `Leslie Lamport`. Mike Unwalla explains where it came from and what it can do: [*a one-page high-level overview*](https://www.techscribe.co.uk/ta/latex-introduction.pdf)
+*LaTeX* (pronounced either “Lah-tech”or, less often, “Lay-tech”) is a macro package based on *TeX* created by Leslie Lamport. Mike Unwalla explains where it came from and what it can do: [*a one-page high-level overview*](https://www.techscribe.co.uk/ta/latex-introduction.pdf)
 
 See more information at the [latex project homepage](https://www.latex-project.org/)
 
 #### Skills needed
 
-LaTeX requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that we are completely fluent and familiar with using our computer before we start. Specifically, effective use of this document requires that we already know and understand the following very thoroughly:
+LaTeX requires no specialist knowledge, although literacy and some familiarity with the publishing process is useful. It is, however, assumed that we are completely fluent and familiar with using our computer before we start. Specifically, effective use of this document requires that we already know and understand the following  thoroughly:
 
 
 -  how to use a good plain-text editor (not a word processor like OpenOffice, WordPerfect, or Microsoft Word).
 
--  where to find all 95 of the printable ASCII characters on our keyboard and what they mean, and how to type accents and symbols, if we use them.
+-  where to find all 95 of the printable ASCII characters on our keyboard and what they mean, and how to type accents and symbols when needed.
 
 -  how to create, open, save, close, rename, move, and delete files and folders (directories).
 
@@ -38,10 +38,10 @@ LaTeX requires no specialist knowledge, although literacy and some familiarity w
 
 #### Prerequisites
 
-At a minimum, we will need the following programs to edit LaTeX:
+At a minimum, editing LaTeX requires the following software:
 
 
--  An editor. We can use a basic text editor like notepad, but a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX environments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
+-  An text editor. Although it is possible to use a basic text editor like notepad, a dedicated LaTeX editor will be more useful. On Windows, `TeXnicCenter` http://www.texniccenter.org/ is a popular free and open source LaTeX editor. On `Unix-like (including Mac OS X) systems`, Emacsen and gvim provide powerful TeX environments for the tech-savvy, while `Texmaker` http://www.xm1math.net/texmaker/index.html and `Kile` http://kile.sf.net provide more user-friendly development environments.
 
 -  The LaTeX binaries and style sheets. e.g. `MiKTeX` http://www.miktex.org/ for Windows, `teTeX` http://www.tug.org/teTeX/ for `Unix/Linux` and `teTeX` for Mac OS X http://www.rna.nl/tex.html.
 
@@ -64,9 +64,9 @@ Here are the main programs we expect to find in any (La)TeX distribution:
 -  *dvipdfm*: an improved version of dvipdf
 
 
-When `LaTeX` was created many decades ago, the only format it could create was `DVI`; then the PDFsupport was added by `pdflatex`. As it is clear from this short list, PDF files can be created with both `pdflatex` and `dvipdfm`; some think that the output of pdflatex is better than the output of dvipdfm. `DVI` is an old format, and it does not support hyperlinks for example. We do not encourage using `DVI`.
+When `LaTeX` was created many decades ago, the only format it could create was `DVI`; then the PDFsupport was added by `pdflatex`. As it is clear from this short list, PDF files can be created with both `pdflatex` and `dvipdfm`; some think that the output of pdflatex is better than the output of dvipdfm. `DVI` is an old format, and it does not support hyperlinks for example. We do not encourage using `DVI`, which is a historical relic.
 
-Note that, since LaTeX is just a collection of macros for TeX, if we compile a plain TeX document with a LaTeX compiler (such as pdflatex) it will work, while the opposite is not true: if you try to compile a LaTeX source with a TeX compiler you will get only a lot of errors.
+Note that, since LaTeX is just a collection of macros for TeX, if we compile a plain TeX document with a LaTeX compiler (such as pdflatex) it will work, while the opposite is not true: if you try to compile a LaTeX source with a TeX compiler you will get only a lot of errors. We discourage the use of plain TeX.
 
 The following diagram shows the relationships between the (La)TeX source code and all the formats you can create from it:
 
@@ -180,6 +180,10 @@ If we are writing a document that needs only a few simple mathematical formulas,
 
 
 
+## LyX
+
+A visual alternative to LaTeX
+
 
 
 ## Markdown
@@ -188,7 +192,3 @@ A light weight language for online communication.
 
 
 
-
-## LyX
-
-A visual alternative to LaTeX
