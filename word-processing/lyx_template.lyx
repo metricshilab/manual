@@ -15,9 +15,9 @@
 % \usepackage{multibbl} 
 
 
-\usepackage[nofiglist, notablelist, figuresonly]{endfloat}
+%\usepackage[nofiglist, notablelist, figuresonly]{endfloat}
 
-\date{February 10, 2018}
+%\date{}
 \end_preamble
 \use_default_options false
 \begin_modules
