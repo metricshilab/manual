@@ -1,0 +1,749 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+
+%\usetheme{Boadilla}
+
+
+%\definecolor{cuhkpurple}{RGB}{117,15,109}
+%\definecolor{cuhkgolden}{RGB}{221,163,0}
+%\definecolor{lightgolden}{RGB}{244, 223, 176}
+
+%\setbeamercolor{title}{fg=cuhkgolden,bg=cuhkpurple}
+%\setbeamercolor{frametitle}{fg=cuhkgolden,bg=cuhkpurple}
+
+%\setbeamercolor*{palette primary}{fg=cuhkgolden,bg=cuhkpurple}
+%\setbeamercolor*{palette secondary}{bg=cuhkpurple!70,fg=cuhkpurple}
+%\setbeamercolor*{palette tertiary}{fg=cuhkgolden,bg=cuhkpurple}
+%\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+%\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+%\setbeamercolor*{titlelike}{bg=cuhkpurple!70}
+
+\usepackage[orientation=landscape,size=custom,width=16,height=9,scale=0.5,debug]{beamerposter} 
+
+
+\setbeamersize{text margin left=0.6em}  % <- like this
+\setbeamersize{text margin right=0.6em}
+
+
+\usepackage[english]{babel}
+
+%\usepackage{tabularx} 
+%\usepackage{amsmath}  
+%\usepackage{xcolor}
+%\usepackage{graphicx} 
+%\usepackage{caption}
+
+% \setbeamercovered{transparent}
+
+
+\title[Forecast]{A paper}
+\author[Shi]{Zhentao Shi (Georgia Tech)}
+% \institute[]{Department of Economics, CUHK}
+\date[]{Oct 15, 2021 \\ somewhere}
+\end_preamble
+\options aspectratio=169
+\use_default_options false
+\begin_modules
+knitr
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "libertine" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "libertine-ntxm" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Forecast combination
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+transfade
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Outcome variable of interest: 
+\begin_inset Formula $y_{t+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $N$
+\end_inset
+
+ forecasts, 
+\begin_inset Formula $\left\{ f_{it}\right\} _{i\in\left[N\right]},$
+\end_inset
+
+ available at time 
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Question:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What weight 
+\begin_inset Formula $\mathbf{w}\in\left\{ \mathbf{w}\in\mathbb{R}^{N}:\sum_{i\in[N]}w_{i}=1\right\} $
+\end_inset
+
+ minimizes the forecast error variance 
+\begin_inset Formula $E\left[\left(y_{t+1}-\mathbf{w}'\mathbf{f}_{t}\right)^{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Empirical Example (Macro)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+European Central Bank's surveys of professional forecasters.
+ CPI, 1-year-ahead or 2-year-ahead.
+ Data: 1999Q1–2018Q4 (20 years), about 120 forecasters.
+ Unbalanced, 30 forecasters of complete record.
+ 40-quarter rolling window.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+European Central Bank's surveys of professional forecasters.
+ CPI, 1-year-ahead or 2-year-ahead.
+ Data: 1999Q1–2018Q4 (20 years), about 120 forecasters.
+ Unbalanced, 30 forecasters of complete record.
+ 40-quarter rolling window.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+European Central Bank's surveys of professional forecasters.
+ CPI, 1-year-ahead or 2-year-ahead.
+ Data: 1999Q1–2018Q4 (20 years), about 120 forecasters.
+ Unbalanced, 30 forecasters of complete record.
+ 40-quarter rolling window.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+fragile
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Empirical Example (Macro)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+European Central Bank's surveys of professional forecasters.
+ CPI, 1-year-ahead or 2-year-ahead.
+ Data: 1999Q1–2018Q4 (20 years), about 120 forecasters.
+ Unbalanced, 30 forecasters of complete record.
+ 40-quarter rolling window.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+European Central Bank's surveys of professional forecasters.
+ CPI, 1-year-ahead or 2-year-ahead.
+ Data: 1999Q1–2018Q4 (20 years), about 120 forecasters.
+ Unbalanced, 30 forecasters of complete record.
+ 40-quarter rolling window.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "pink"
+status open
+
+\begin_layout Enumerate
+European Central
+\end_layout
+
+\begin_layout Enumerate
+CPI, 1-year-ahead 
+\end_layout
+
+\begin_layout Enumerate
+or 2-year-ahead.
+\end_layout
+
+\begin_layout Enumerate
+Data: 1999Q1–2018Q4 (20 years
+\end_layout
+
+\begin_layout Enumerate
+
+\backslash
+about 120 forecasters.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Problem and Algorithm
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+sectionpage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Bates and Granger (1969)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Forecast error 
+\begin_inset Formula $\mathbf{e}_{t}=\left(e_{1t},\ldots,e_{Nt}\right)^{\prime}$
+\end_inset
+
+ with 
+\begin_inset Formula $e_{it}=y_{t+1}-f_{it}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Sample variance-covariance (VC): 
+\begin_inset Formula $\widehat{\boldsymbol{\Sigma}}:=T^{-1}\sum_{t=1}^{T}\mathbf{e}_{t}\mathbf{e}_{t}^{\prime}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bates and Granger: (
+\color red
+Problem-BG
+\color inherit
+)
+\begin_inset Formula 
+\[
+\min_{\mathbf{w}\in\mathbb{R}^{N}}\,\frac{1}{2}\mathbf{w}^{\prime}\widehat{\boldsymbol{\Sigma}}\mathbf{w}\ \ \text{subject to \ }\mathbf{w}^{\prime}\boldsymbol{1}_{N}=1.
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $\widehat{\boldsymbol{\Sigma}}$
+\end_inset
+
+ is invertible, 
+\begin_inset Formula 
+\[
+\widehat{\mathbf{w}}^{\mathrm{\mathrm{BG}}}=\widehat{\boldsymbol{\Sigma}}^{-1}\boldsymbol{1}_{N}\ /\ \boldsymbol{1}_{N}^{\prime}\widehat{\boldsymbol{\Sigma}}^{-1}\boldsymbol{1}_{N}.
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $N$
+\end_inset
+
+ is close to 
+\begin_inset Formula $T$
+\end_inset
+
+, the inverse is ill-conditioned.
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $N>T$
+\end_inset
+
+, sample VC is singular.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Summary
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Constrained quadratic optimization formulates many economic and financial
+ questions.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We propose L2-relaxation to stabilize the numerical solution.
+\end_layout
+
+\begin_layout Itemize
+A new machine learning algorithm to improve the estimation.
+\end_layout
+
+\begin_layout Itemize
+Asymptotic optimality under group structure.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
