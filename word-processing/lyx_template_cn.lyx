@@ -108,6 +108,22 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+I have found a better solution for Chinese text.
+ See the other 
+\begin_inset Quotes eld
+\end_inset
+
+cn
+\begin_inset Quotes erd
+\end_inset
+
+ file.
+ 12/9/2021
+\end_layout
+
+\begin_layout Standard
 With the advent of big data, computer scientists have come up with a plethora
  of new algorithms that are aimed at revealing patterns from data.
  
@@ -2024,7 +2040,7 @@ is in the sense that if you want to use econometric methods, instead of
 Yes
 \emph default
  is in the sense that without measure theory, we cannot even formally define
-
+\end_layout
 
 \begin_layout Standard
 

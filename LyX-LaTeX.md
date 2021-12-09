@@ -45,7 +45,7 @@ At a minimum, editing LaTeX requires the following software:
 
 -  The LaTeX binaries and style sheets. e.g. `MiKTeX` http://www.miktex.org/ for Windows, `teTeX` http://www.tug.org/teTeX/ for `Unix/Linux` and `teTeX` for Mac OS X http://www.rna.nl/tex.html.
 
--   A `DVI` viewer to view and print the final result. Usually, a DVI viewer is included in the editor or is available with the binary distribution. 
+-   A `DVI` viewer to view and print the final result. Usually, a DVI viewer is included in the editor or is available with the binary distribution.
 
 A distribution of LaTeX, with many packages, add-ins, editors and viewers for Unix, Linux, Mac and Windows can be obtained from the TeX users group at http://www.tug.org/texlive/.
 
@@ -75,7 +75,7 @@ The following diagram shows the relationships between the (La)TeX source code an
 ![image](https://github.com/metricshilab/manual/blob/main/figure%201.png)
 
 
-The boxed `red` text represents the file formats, the `blue` text on the arrows represents the commands we have to use, the small `dark green` text under the boxes represents the image formats that are supported. Any time we pass through an arrow we lose some information, which might decrease the quality of our document. Therefore, in order to achieve the highest quality in our output file, we should choose the shortest route to reach our target format. 
+The boxed `red` text represents the file formats, the `blue` text on the arrows represents the commands we have to use, the small `dark green` text under the boxes represents the image formats that are supported. Any time we pass through an arrow we lose some information, which might decrease the quality of our document. Therefore, in order to achieve the highest quality in our output file, we should choose the shortest route to reach our target format.
 
 This is probably the most convenient way to obtain an output in our desired format anyway. Starting from a LaTeX source, the best way is to use only latex for a DVI output or pdflatex for a PDF output, converting to PostScript only when it is necessary to print the document. Most of the programs should be already within our LaTeX distribution; the others come with Ghostscript, which is a free and multi-platform software as well.
 
@@ -89,7 +89,7 @@ Happiness
 Yang Chen
 July 2021
 
-Happiness is largely a choice. 
+Happiness is largely a choice.
 ```
 To produce this in most typesetting or word-processing systems, the author would have to decide what layout to use, so would select (say) 18pt Times Roman for the title, 12pt Times Italic for the name, and so on. This has two results: authors wasting their time with designs; and a lot of badly designed documents!
 
@@ -102,7 +102,7 @@ LaTeX is based on the idea that it is better to leave document design to documen
 \date{July 2021}
 \begin{document}
    \maketitle
-   Happiness is largely a choice. 
+   Happiness is largely a choice.
 \end{document}
 
 ```
@@ -157,7 +157,7 @@ Mathematics has lots and lots of symbols! If there is one aspect of maths that i
 
 ` + - = ! / ( ) [ ] < > | ’ : `
 
-Beyond those listed above, distinct commands must be issued in order to display the desired symbols. And there are a lot! `Greek letters, set and relations symbols, array, arrows, binary operators, etc.` Too many to remember, and in fact, they would overwhelm this manual. 
+Beyond those listed above, distinct commands must be issued in order to display the desired symbols. And there are a lot! `Greek letters, set and relations symbols, array, arrows, binary operators, etc.` Too many to remember, and in fact, they would overwhelm this manual.
 
 For example, using the `array` environment we can create table-like structures in math mode. The array environment is basically equivalent to the tabular environment. If we want to create a `matrix`, Latex, by default, doesn't have a specific command to use, but we can create a similar structure using array. We can use the `array` to arrange and align our data as we want, and then enclose it with appropriate left and right brackets, and this will give we our matrix. For a simple *2x2 matrix*:
 
@@ -184,11 +184,14 @@ If we are writing a document that needs only a few simple mathematical formulas,
 
 A visual alternative to LaTeX
 
+Display Chinese in LyX. The following method is verified on 12/9/2021. This is a general method for all classes.
+
+* In Document > Settings, change Language to "Chinese (simplified)" and Encoding to "other: Unicode (CJK) (utf8)"
+* In Document > Settings, under Fonts change "CJK:" to "gbsn".
+* View PDF (pdftex)
+
 
 
 ## Markdown
 
 A light weight language for online communication.
-
-
-
