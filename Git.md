@@ -23,8 +23,13 @@ We introduce some essential Git commands. There are two ways to interact with Gi
 
 ## Basic Git Commands
 
+### Identity
+* `git branch [brach_name]`
+* `git checkout [commit_id or branch name]`
+
 ### Local
 
+* .gitignore
 * `git help <command>` gets help for a git command
 * `git init`  creates a new git repo, with data stored in the `.git` directory
 * `git status` inspects the contents of the working directory and staging area.
@@ -38,10 +43,7 @@ We introduce some essential Git commands. There are two ways to interact with Gi
 * `git config --global user.name <name>`
 * `git config --global user.email <email>`
 * `git tag -a v1.0 -m 'message' [optional:commit-id]`
-* `git rm --cached filename`
-* `git branch [brach_name]`
-* `git checkout [commit_id or branch name]`
-* .gitignore
+* `git rm --cached filename` remove
 
 #### Eraser-like features
 
