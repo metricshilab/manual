@@ -25,8 +25,9 @@ We introduce some essential Git commands. There are two ways to interact with Gi
 ## Basic Commands
 
 ### Identity
-* `git branch [brach_name]`
-* `git checkout [commit_id or branch name]`
+
+* `git config --global user.name <name>`
+* `git config --global user.email <email>`
 
 ### Local
 
@@ -41,8 +42,6 @@ We introduce some essential Git commands. There are two ways to interact with Gi
 * `git commit -m "Commit Message"` The commit message must be in the quotation marks.
 * `git log` displays historical commits stored chronologically in the repository.
 * `git log --all --graph --decorate` visualizes history as a DAG
-* `git config --global user.name <name>`
-* `git config --global user.email <email>`
 * `git tag -a v1.0 -m 'message' [optional:commit-id]`
 * `git rm --cached filename` remove
 
