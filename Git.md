@@ -11,6 +11,8 @@ Git is a version control system useful when developing and maintaining coding pr
 With Git, we no longer need to save historical versions `paper_v1.tex`, `paper_v2.tex` up to even `paper_v11.tex`. It is easy to track changes to code and text files and maintain a history  of changes. In addition, it is safe to experiment and test
 different branches of development without changing the current main branch. More importantly, Git, together with online platforms like Github, empowers collaboration. Researcher are able to work on the same project, even on the same file, separately, see what other people have done and resolve conflicts when needed. 
 
+To be further motivated, please refer to [git vs. Dropbox from a researcher's perspective](https://michaelstepner.com/blog/git-vs-dropbox/) by [Michael Stepner](https://michaelstepner.com/).
+
 Free Git books and tutorials are available online. Self-learning is important. 
 
 * [Atlassian Online Tutorial](https://www.atlassian.com/git/tutorials) This online tutorial is a good starting point to learn the basics of Git.
