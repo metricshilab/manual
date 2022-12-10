@@ -25,7 +25,7 @@ In the future, perhaps Zt will add a bit about experience at AWS.
 
 	    ``` {.R}
         my_packages = c("PACKAGE 1 NAME", "PACKAGE W NAME", ...)
-    
+      
         install_if_missing = function(p) {
             if (p %in% rownames(installed.packages()) == FALSE) {
                 install.packages(p, dependencies = TRUE)
@@ -42,9 +42,9 @@ In the future, perhaps Zt will add a bit about experience at AWS.
 
 	    ``` {.R}
         library(shiny)
-    
+      
         port <- Sys.getenv('PORT')
-    
+      
         shiny::runApp(
             appDir = getwd(),
             host = '0.0.0.0',
@@ -98,4 +98,18 @@ And there we have it.
 2.  <https://github.com/virtualstaticvoid/heroku-buildpack-r>
 
 3.  <https://shiny.rstudio.com/reference/shiny/0.14/reactiveTimer.html>
+
+## Sync Cloud Workspace with Github Repo Using SSH
+
+Follow the instrcutions in https://dylancastillo.co/how-to-use-github-deploy-keys/. to generate a SSH key on the server and deploy the key to the Github repo. Then we change `git remote` setup on the server by
+
+```shell
+git remote set-url origin git@<key-name>:<Username>/<Project>.git
+```
+
+For example,
+
+```shell
+git remote set-url origin git@github-lasforecast:zhan-gao/LasForecast.git
+```
 
